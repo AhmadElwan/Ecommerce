@@ -57,7 +57,7 @@ router.get("/", verifyTokenAndAdmin, async (req, res) => {
     }
 })
 
-// Get number of accounts created each month for the last year 
+// Get number of accounts created each month for the last year --- will be used when building the admin dashboard
 
 router.get("/stats", verifyTokenAndAdmin, async (req, res) => {
     const date = new Date();
